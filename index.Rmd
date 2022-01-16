@@ -1,6 +1,7 @@
 ---
 title: "A Book"
-author: "Frida Gomam"
+author: "Kittipos Sirivongrungson"
+date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 output:
@@ -8,12 +9,28 @@ output:
   #bookdown::pdf_book: default
 ---
 
-# Hello World
+# Bookdown Test
 
-Hi.
+This is my experimental test repo for creating [a bookdown website](https://bookdown.org/yihui/bookdown/usage.html).
 
-Bye.
+## Usage
 
-Hello again
+By default, bookdown merges all Rmd files by the order of filenames, e.g., 01-intro.Rmd will appear before 02-literature.Rmd. Filenames that start with an underscore _ are skipped. If there exists an Rmd file named index.Rmd, it will always be treated as the first file when merging all Rmd files.
+
+### Render {#render}
+
+```{r eval=FALSE}
+# bookdown::render_book(".", "bookdown::gitbook")
+bookdown::preview_chapter("index.Rmd")
+```
+
+### Live Preview
+
+Live preview of the book can be done by
+
+```{r eval=FALSE}
+bookdown::serve_book()
+```
+
 
 <!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->

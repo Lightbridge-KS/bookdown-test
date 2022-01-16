@@ -1,0 +1,27 @@
+---
+title: "Introduction"
+author: "Kittipos Sirivongrungson"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Chapter name is defined by 1st level header.
+
+## Linking
+
+A link to a chapter by a single set of square brackets `[Bookdown Test]`: [Bookdown Test]
+
+**Customize Link Text**
+
+-   To Chapter: [Testing for Bookdown][Bookdown Test]
+-   To ID: [Render Book][#render]
